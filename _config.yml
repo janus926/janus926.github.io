@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               janus926
-tagline:
+tagline:             my blog
 description:
 url:                 http://janus926.github.io
 baseurl:             /
