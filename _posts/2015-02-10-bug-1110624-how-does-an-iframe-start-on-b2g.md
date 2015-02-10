@@ -5,7 +5,7 @@ title: Bug 1110624 - How does an iframe start on B2G
 
 `<iframe remote mozbrowser mozapp=...>`
 
-[classes](/public/images/bug-1110624.png)
+![classes](/public/images/bug-1110624.png)
 
 iframe.src = ...
   HTMLIFrameElement::SetAttr()
