@@ -41,25 +41,25 @@ iframe.src = ...
               } else {
                new TabChild()
               }
-            ContentChild::RecvPBrowserConstructor()
-         nsFrameLoader::ShowRemoteFrame()
-          TabParent::Show()
-           PBrowserParent::SendShow()
-           --- IPC ---
-           TabChild::RecvShow()
-            TabChild::InitTabChildGlobal()
-             TabChild::RecvLoadRemoteScript("BrowserElementChild.js")
-         NotifyObservers("remote-browser-shown")
-          nsBrowserElement::InitBrowserElementAPI()
-           mBrowserElementAPI = do_CreateInstance("BrowserElementParent.js")
-           mBrowserElementAPI->SetFrameLoader()
-         mRemoteBrowser->LoadURL()
-          TabParent::LoadURL()
-          PBrowserParent::SendLoadURL()
-          --- IPC ---
-          TabChild::RecvLoadURL()
-           nsIWebNavigation::LoadURI()
-            nsDocShell::LoadURI()
+           ContentChild::RecvPBrowserConstructor()
+          nsFrameLoader::ShowRemoteFrame()
+           TabParent::Show()
+            PBrowserParent::SendShow()
+            --- IPC ---
+            TabChild::RecvShow()
+             TabChild::InitTabChildGlobal()
+              TabChild::RecvLoadRemoteScript("BrowserElementChild.js")
+           NotifyObservers("remote-browser-shown")
+            nsBrowserElement::InitBrowserElementAPI()
+             mBrowserElementAPI = do_CreateInstance("BrowserElementParent.js")
+             mBrowserElementAPI->SetFrameLoader()
+          mRemoteBrowser->LoadURL()
+           TabParent::LoadURL()
+            PBrowserParent::SendLoadURL()
+            --- IPC ---
+            TabChild::RecvLoadURL()
+             nsIWebNavigation::LoadURI()
+              nsDocShell::LoadURI()
          } else { // !mRemoteFrame
           nsDocShell::LoadURI()
          }
