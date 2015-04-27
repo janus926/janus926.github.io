@@ -10,6 +10,7 @@ I just came up two more ideas on the way to the office this morning:
 
 1. Explore a new space by its own  
 Back in school days, when I played RPG games, entering a map is usually all dark and I need to walk around to figure out what the space is like and found different NPC to interact. That seems the same situation for the drone, so if it can fly around and draws the indoor map automatically, wow, that's nice and very much easier.
+Edit: I just found [Tango](https://www.google.com/atap/project-tango/) seems is doing the same thing, cool!
 2. People can set its waypoint  
 Now people can set waypoints on the map. Just like drag and drop the waypoint on a pad and the drone will fly there. Maybe use an IR points to the waypoint, or plot some virtual line in drone's sight (VR for the drone).
 
