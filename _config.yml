@@ -13,7 +13,7 @@ title:               janus926
 tagline:             my blog
 description:
 url:                 http://janus926.github.io
-baseurl:             /
+baseurl:             ''
 paginate:            5
 
 # About/contact
